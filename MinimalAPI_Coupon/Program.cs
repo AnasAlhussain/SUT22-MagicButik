@@ -130,7 +130,7 @@ app.MapPut("/api/coupon/",async (
     Coupon couponFromStore = CouponStore.couponlist.FirstOrDefault(c => c.Id == coupon_U_DTO.Id);
     couponFromStore.IsActive = coupon_U_DTO.IsActive;
     couponFromStore.Name = coupon_U_DTO.Name;
-    couponFromStore.Precent = coupon_U_DTO.Percent;
+    couponFromStore.Precent = coupon_U_DTO.Precent;
     couponFromStore.LastUpdate = DateTime.Now;
 
 

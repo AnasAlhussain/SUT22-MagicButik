@@ -9,7 +9,7 @@ namespace MinimalAPI_Coupon.Validations
         {
             RuleFor(model => model.Id).NotEmpty().GreaterThan(0);
             RuleFor(model => model.Name).NotEmpty();
-            RuleFor(model => model.Percent).InclusiveBetween(1, 100);
+            RuleFor(model => model.Precent).InclusiveBetween(1, 100);
         }
     }
 }
